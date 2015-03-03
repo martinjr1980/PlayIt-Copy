@@ -5,43 +5,43 @@ p{
 	display: inline-block;
 }
 button{
-	margin-top:50px;
-	border-radius: 10px;
+	margin-top:25px;
+	border-radius: 5px;
 	border: 1px solid white;
 	background:blue;
-	width:250px;
-	height:75px;
+	width:125px;
+	height:38px;
 }
 a{
 	text-decoration:none;
 	color:white;
-	font-size:20pt;
+	font-size:10pt;
 }
 h1{
 	text-align:center;
 }
 .matchthis{
-	width:220px;
-	height:240px;
+	width:100px;
+	height:120px;
 }
 .random_image{
-	margin-left:110px;
-	margin-top:50px;
+	margin-left:55px;
+	margin-top:25px;
 	position:absolute;
 }
 #main_bubble{
-	margin-top:700px;
-	margin-left:200px;
+	margin-top:350px;
+	margin-left:100px;
 }
 #result_msg{
-	font-size:90pt;
+	font-size:45pt;
 	background-color:black;
 	color:white;
-	width:600px;
-	height:600px;
+	width:300px;
+	height:300px;
 	opacity:0.7;
 	border-radius:50%;
-	margin:100px auto;
-	padding:180px;
+	margin:50px auto;
+	padding:90px;
 	text-align:center;
 }

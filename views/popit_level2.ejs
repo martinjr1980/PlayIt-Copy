@@ -35,13 +35,13 @@
 
 			this.updateBalloons = function () {
 				for (var i=0; i<this.balloons.length; i++) {
-					if (this.balloons[i].info.y <= -260) {
+					if (this.balloons[i].info.y <= -130) {
 						document.getElementById(this.balloons[i].info.id).remove();
 						this.deleteBalloon(i);
 						i--;
 					}
 					else {
-						this.balloons[i].info.y -= 20;
+						this.balloons[i].info.y -= 10;
 						document.getElementById(this.balloons[i].info.id).style.top = this.balloons[i].info.y;
 					}
 				}
@@ -66,10 +66,10 @@
 			this.popBalloons = function (x, y) {
 				if (this.balloons) {
 					for (var i=0; i<this.balloons.length; i++) {
-						var x_cent = this.balloons[i].info.x + 100;
-						var y_cent = this.balloons[i].info.y + 130;
+						var x_cent = this.balloons[i].info.x + 50;
+						var y_cent = this.balloons[i].info.y + 65;
 						var delta = getDistance (x, x_cent, y, y_cent);
-						if (delta <= 100) {
+						if (delta <= 50) {
 							this.info.pops++;
 							document.getElementById(this.balloons[i].info.id).remove();
 							this.deleteBalloon(i);
@@ -184,8 +184,8 @@
 						this.map[y][x] = 0;
 					}
 
-					x = x * 200 + 40;
-					y = y * 260 + 120;
+					x = x * 100 + 20;
+					y = y * 130 + 60;
 
 					this.balloon = new Balloon(i, x, y);
 					this.balloons[i] = this.balloon;
